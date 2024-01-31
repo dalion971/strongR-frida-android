@@ -85,7 +85,7 @@ jobs:
       with:
         node-version: 16
 
-    - uses: fusion-engineering/setup-git-credentials@v2
+    - uses: de-vri-es/setup-git-credentials@v2
       with:
         credentials: ${{secrets.GIT_CREDENTIALS}}
 
@@ -119,9 +119,9 @@ jobs:
         git clone ${{ secrets.PATCH_REPO }}
         export ANDROID_NDK_ROOT=${{ steps.setup-ndk.outputs.ndk-path }}
         git clone --recurse-submodules https://github.com/frida/frida
-        cd frida/frida-core
-        git am ../../Patchs/strongR-frida/frida-core/*.patch
-        cd ../
+        rm -rf frida/frida-core
+        cp -r frida-core frida/frida-core
+        cd frida
         make core-android-arm
         make core-android-arm64
         make core-android-x86
