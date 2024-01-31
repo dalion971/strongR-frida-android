@@ -1,6 +1,7 @@
 # Patch By Dalion
 由于frida变动较大，用patch的方式修补几乎无法自动成功，使用硬替换的方式，再拉取上游frida后，替换已经手动patch后frida-core 
-需要设置Secret PATCH_REPO 为指向frida-core的仓库 如https://github.com/dalion971/frida-core.git， 由于替换是硬编码路径不要修改路径及相对路径
+需要设置Secret PATCH_REPO 为指向frida-core的仓库 如https://github.com/dalion971/frida-core.git
+由于替换是硬编码路径不要修改路径及相对路径
 
 ```yml
         git clone --recurse-submodules https://github.com/frida/frida
