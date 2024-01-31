@@ -15,13 +15,14 @@ Fork This Repository
 
 需要设置Secrets
 包括
+```yml
    GIT_OWNER      
    GIT_REPO
    GIT_CREDENTIALS
    GIT_EMAIL
    GIT_NAME
    PATCH_REPO
-
+```
 GIT_CREDENTIALS 在个人github账户开发者设置生成一个
 
 
