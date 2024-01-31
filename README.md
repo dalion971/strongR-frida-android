@@ -12,13 +12,16 @@
 
 Fork This Repository 
 
-Error:
-1. Create_Release失败，删除最新的release
-2. Error GIT_CREDENTIALS 需要设置Secrets 我的示例配置， 
+
+需要设置Secrets
+包括
+   GIT_OWNER      
+   GIT_REPO
    GIT_CREDENTIALS
    GIT_EMAIL
    GIT_NAME
    PATCH_REPO
+
 GIT_CREDENTIALS 在个人github账户开发者设置生成一个
 
 
